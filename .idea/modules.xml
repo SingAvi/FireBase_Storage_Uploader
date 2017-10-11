@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FireBase_Storage.iml" filepath="$PROJECT_DIR$/FireBase_Storage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FireBase_Storage_Uploader.iml" filepath="$PROJECT_DIR$/FireBase_Storage_Uploader.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

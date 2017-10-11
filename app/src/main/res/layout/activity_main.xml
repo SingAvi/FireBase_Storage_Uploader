@@ -17,6 +17,11 @@
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:text="Choose"
+          android:layout_marginTop="5dp"
+          android:layout_marginLeft="1dp"
+          android:layout_marginRight="2dp"
+          android:textColor="#7e052d"
+          android:background="#fff"
           android:id="@+id/choose"
           android:layout_weight="1"/>
 
@@ -24,16 +29,51 @@
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:id="@+id/upload"
+          android:layout_marginTop="5dp"
+          android:layout_marginRight="2dp"
+          android:background="#fff"
+          android:textColor="#7e052d"
           android:layout_weight="1"
           android:text="Upload"/>
 
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/download"
+          android:layout_marginTop="5dp"
+          android:background="#fff"
+          android:textColor="#7e052d"
+          android:layout_marginLeft="1dp"
+          android:layout_weight="1"
+          android:text="Download"/>
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/fetch"
+          android:layout_marginTop="5dp"
+          android:background="#fff"
+          android:textColor="#7e052d"
+          android:layout_marginLeft="2dp"
+          android:layout_weight="1"
+          android:text="Fetch"/>
+
   </LinearLayout>
+
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/imageview"
         android:layout_margin="10sp"
+        android:layout_below="@+id/filename"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="File Name"
+        android:textColorHint="#7e052d"
+        android:id="@+id/filename"
         android:layout_below="@+id/linearlayout"/>
 
 </RelativeLayout>

@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     Button chooseImg, uploadImg;
 
     ImageView imgView;
+    Button down;
 
     int PICK_IMAGE_REQUEST = 1011;
     Uri filePath;
@@ -44,12 +45,21 @@ public class MainActivity extends AppCompatActivity {
 
         chooseImg = (Button)findViewById(R.id.choose);      //choose button
         uploadImg = (Button)findViewById(R.id.upload);      //upload button
-        imgView = (ImageView)findViewById(R.id.imageview);  //image view
+        imgView = (ImageView)findViewById(R.id.imageview);
+        down=(Button)findViewById(R.id.download); //image view
 
         pd = new ProgressDialog(this);
         pd.setIndeterminate(true);
         pd.setTitle("Upload Process");                              //progress dialog box title
                // progress spinner
+
+
+        down.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,Main2Activity.class));
+            }
+        });
 
 
         chooseImg.setOnClickListener(new View.OnClickListener() {       //Image Selection start
